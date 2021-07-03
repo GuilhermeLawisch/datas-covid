@@ -52,7 +52,7 @@ export default function Home() {
   useEffect(() => {
     const day = new Date().getDate()
     const mouth = new Date().getMonth()
-    const year = new Date().getYear()
+    const year = new Date().getFullYear()
   
     const dayBeforeOne = day - 1
     const dayBeforeTwo = day - 2
