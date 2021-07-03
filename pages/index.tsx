@@ -52,11 +52,10 @@ export default function Home() {
   useEffect(() => {
     const day = new Date().getDate()
     const mouth = new Date().getMonth()
-    const year = new Date().getFullYear()
+    const yearNow = new Date().getFullYear()
   
     const dayBeforeOne = day - 1
     const dayBeforeTwo = day - 2
-    const yearNow = 1900 + year
 
     const date = new Date(yearNow, mouth, dayBeforeOne)
     const dateFrom = new Date(yearNow, mouth, dayBeforeTwo)
